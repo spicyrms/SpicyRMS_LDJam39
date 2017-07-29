@@ -84,5 +84,13 @@
       <Name>splash_screen</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\audio\music\ending.wav" />
+    <Content Include="assets\audio\music\level_1.wav" />
+    <Content Include="assets\audio\music\level_2.wav" />
+    <Content Include="assets\audio\music\level_3.wav" />
+    <Content Include="assets\audio\music\title_screen.wav" />
+    <Content Include="assets\background\dark_room.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
