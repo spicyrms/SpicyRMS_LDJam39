@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpicyRMS", "SpicyRMS\SpicyRMS.csproj", "{08E68A16-0271-46A8-BC0E-375A9AF8D08C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "splash_screen", "splash_screen\splash_screen.csproj", "{F220D7B7-E96B-4E5C-8332-A9BA98145C9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{08E68A16-0271-46A8-BC0E-375A9AF8D08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08E68A16-0271-46A8-BC0E-375A9AF8D08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08E68A16-0271-46A8-BC0E-375A9AF8D08C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F220D7B7-E96B-4E5C-8332-A9BA98145C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F220D7B7-E96B-4E5C-8332-A9BA98145C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F220D7B7-E96B-4E5C-8332-A9BA98145C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F220D7B7-E96B-4E5C-8332-A9BA98145C9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

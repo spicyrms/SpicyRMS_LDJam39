@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{08E68A16-0271-46A8-BC0E-375A9AF8D08C}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>SpicyRMS</RootNamespace>
-    <AssemblyName>SpicyRMS</AssemblyName>
+    <ProjectGuid>{F220D7B7-E96B-4E5C-8332-A9BA98145C9C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>splash_screen</RootNamespace>
+    <AssemblyName>splash_screen</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,17 +48,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="main_form.cs">
+    <Compile Include="splash_screen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="main_form.Designer.cs">
-      <DependentUpon>main_form.cs</DependentUpon>
+    <Compile Include="splash_screen.Designer.cs">
+      <DependentUpon>splash_screen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="main_form.resx">
-      <DependentUpon>main_form.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -65,6 +65,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="splash_screen.resx">
+      <DependentUpon>splash_screen.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -77,12 +80,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\splash_screen\splash_screen.csproj">
-      <Project>{f220d7b7-e96b-4e5c-8332-a9ba98145c9c}</Project>
-      <Name>splash_screen</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
